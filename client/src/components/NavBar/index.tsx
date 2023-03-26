@@ -2,12 +2,11 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PixIcon from '@mui/icons-material/Pix';
 import { Box, Typography, useTheme } from '@mui/material';
-import FlexBetween from './FlexBetween';
-import { fontSize } from '@mui/system';
+import FlexBetween from '@/components/FlexBetween';
 
 type Props = {};
 
-const DashboardPage = (props: Props) => {
+const NavBar = (props: Props) => {
   const { palette } = useTheme();
   const [selected, setSelected] = useState('dashboard');
   return (
@@ -52,4 +51,4 @@ const DashboardPage = (props: Props) => {
   );
 };
 
-export default DashboardPage;
+export default NavBar;
